@@ -44,4 +44,4 @@ AI Musician is a web app that generates a poem about the dangers of climate chan
 > - Share on more platforms.
 
 # Support
-☕ [Buy me a coffee](ko-fi.com/sweetdev)
+☕ [Buy me a coffee](https://ko-fi.com/sweetdev)
