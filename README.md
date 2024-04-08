@@ -11,8 +11,31 @@ _"People are experiencing the significant impacts of climate change, which inclu
 [ 🗒️ SDG, Goal 13](https://sdgs.un.org/goals/goal13)
 
 
+
+
+
+
 ## An intersection of AI Technology, Lingual Art and Environmental Awareness 🤖 + 📋 + 🌍
 AI Musician is a web app that generates a poem about the dangers of climate change. It can generate poems in English, Spanish, French, German, Italian, Portuguese, Russian, Chinese, Japanese and Korean. Generate and share the poems on X, Facebook, LinkedIn. AI Musician is powered by Gemini.
+
+🚀🚀🚀[Try it out](demo.com)
+
+### Available Languages 
+- English
+- Spanish
+- French
+- German
+- Italian
+- Portuguese
+- Russian
+- Chinese
+- Japanese
+- Korean
+
+### Features
+- Share
+- Copy
+- Multi Language
 
 
 >[!IMPORTANT]
@@ -21,4 +44,4 @@ AI Musician is a web app that generates a poem about the dangers of climate chan
 > - Share on more platforms.
 
 # Support
-[Buy me a coffee](ko-fi.com/sweetdev)
+☕ [Buy me a coffee](https://ko-fi.com/sweetdev)
