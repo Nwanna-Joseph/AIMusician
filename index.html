@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js" lang="" data-bs-theme="dark">
+<html class="no-js" lang="" data-bs-theme="light">
 
 <head>
   <meta charset="utf-8">
@@ -23,7 +23,17 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
   <style>
+
     @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Press+Start+2P&family=Varela+Round&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Press+Start+2P&family=Reem+Kufi+Fun:wght@400..700&family=Varela+Round&display=swap');
+
+
+    #languages:focus{
+      border-color: black;
+      box-shadow: none;
+      outline: 0 none;
+    }
+
   </style>
 </head>
 
@@ -40,7 +50,7 @@
           <div class="cols">
             <div class="input-group">
               <div class="input-group-text">Select Poem's Language</div>
-              <select id="languages" class="form-select" aria-label="Select Output Language">
+              <select id="languages" class="form-select" aria-label="Select Output Language" >
                 <option value="English">English</option>
                 <option value="Spanish">Spanish</option>
                 <option value="French">French</option>
@@ -52,7 +62,7 @@
                 <option value="Japanese">Japanese</option>
                 <option value="Korean">Korean</option>
               </select>
-              <button id="generate_button" class="btn btn-primary ">Generate</button>
+              <button id="generate_button" class="btn btn-dark ">Generate</button>
             </div>
           </div>
 
@@ -63,23 +73,23 @@
 
   <div id="generated_content" class="my-5">
     <div class="text-center justify-content-center mx-auto py-5">
-      <h1>AI Musician</h1>
+      <h1 style='font-family: "Reem Kufi Fun", sans-serif;'>AI Musician</h1>
       <div>Use poems to fight for climate change awareness. Powered by Gemini.</div>
     </div>
   </div>
   <div>
-    <button id="copy_btn" class="btn btn-outline-light" aria-label="Copy Poem to clipboard">Copy Poem</button>
+    <button id="copy_btn" class="btn btn-outline-dark" aria-label="Copy Poem to clipboard">Copy Poem</button>
   </div>
 
   <footer class="py-3 my-4">
     <ul class="nav justify-content-center border-bottom pb-3 mb-3">
       <li class="nav-item"><a href="https://github.com/Nwanna-Joseph/AIMusician" target="_blank"
-                              rel="noopener noreferrer" class="nav-link px-2 text-body-secondary">About</a></li>
+                              rel="noopener noreferrer" class="nav-link px-2 text-body-secondary"><span class="btn btn-sm btn-outline-dark">About </span></a></li>
       <li class="nav-item"><a href="https://ko-fi.com/sweetdev" target="_blank" rel="noopener noreferrer"
                               class="nav-link px-2 text-body-secondary"> <span
         class="btn btn-sm btn-success">Donate</span> </a></li>
-      <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Terms and Condition</a></li>
-      <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Privacy Policy</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary"><span class="btn btn-sm btn-outline-dark">Terms and Condition</span></a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary"><span class="btn btn-sm btn-outline-dark">Privacy Policy</span></a></li>
     </ul>
     <p class="text-center text-body-secondary">© 2024 AI Musician</p>
   </footer>
