@@ -77,7 +77,8 @@
       <div>Use poems to fight for climate change awareness. Powered by Gemini.</div>
     </div>
   </div>
-  <div>
+  <div id="copy_container" class="d-none">
+    <div class="my-2">&nbsp;<span id="copied_alert" class="d-none"> <b class="">👍</b> Copied</span></div>
     <button id="copy_btn" class="btn btn-outline-dark" aria-label="Copy Poem to clipboard">Copy Poem</button>
   </div>
 
@@ -85,13 +86,13 @@
     <ul class="nav justify-content-center border-bottom pb-3 mb-3">
       <li class="nav-item"><a href="https://github.com/Nwanna-Joseph/AIMusician" target="_blank"
                               rel="noopener noreferrer" class="nav-link px-2 text-body-secondary"><span class="btn btn-sm btn-outline-dark">About </span></a></li>
-      <li class="nav-item"><a href="https://ko-fi.com/sweetdev" target="_blank" rel="noopener noreferrer"
+      <li class="nav-item"><a href="https://www.buymeacoffee.com/sweetdev" target="_blank" rel="noopener noreferrer"
                               class="nav-link px-2 text-body-secondary"> <span
         class="btn btn-sm btn-success">Donate</span> </a></li>
       <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary"><span class="btn btn-sm btn-outline-dark">Terms and Condition</span></a></li>
       <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary"><span class="btn btn-sm btn-outline-dark">Privacy Policy</span></a></li>
     </ul>
-    <p class="text-center text-body-secondary">© 2024 AI Musician</p>
+    <p class="text-center text-body-secondary">© 2024 AI Musician. Built by Nwanna Joseph</p>
   </footer>
 
 </div>
@@ -127,6 +128,8 @@
 
   document.getElementById("generate_button").onclick = async () => {
     document.getElementById("generated_content").innerText = "Generating..."
+    document.getElementById("copy_container").classList.add("d-none")
+    document.getElementById("copied_alert").classList.add("d-none")
     const language = document.getElementById("languages").value
     const prompt = `Write a poem in ${language} about the dangers of climate change?`
     const result = await model.generateContent(prompt);
@@ -136,11 +139,14 @@
     document.getElementById("copy_btn").onclick = async () => {
       try {
         await navigator.clipboard.writeText(text);
+
         console.log('Content copied to clipboard');
+        document.getElementById("copied_alert").classList.remove("d-none")
       } catch (err) {
         console.error('Failed to copy: ', err);
       }
     }
+    document.getElementById("copy_container").classList.remove("d-none")
   }
 
   // https://aistudio.google.com/app/u/1/apikey
