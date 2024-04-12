@@ -108,23 +108,13 @@
   import {GoogleGenerativeAI} from "@google/generative-ai";
 
   // Fetch your API_KEY
-  const API_KEY = "AIzaSyBRpYpySKSNH3-K6-IO51xj0MdK7XMAm3Q";
+  const API_KEY = "";
 
   // Access your API key (see "Set up your API key" above)
   const genAI = new GoogleGenerativeAI(API_KEY);
 
-  // ...
-
   // For text-only input, use the gemini-pro model
   const model = genAI.getGenerativeModel({model: "gemini-pro"});
-
-  // ...
-
-  // const prompt = "Write a story about a magic backpack."
-  // const prompt = "What are some meaningful problems that LLMs can solve?"
-  // const prompt = "How can LLMs help to combat climate change?"
-  // const prompt = "Write a poem in Greek about the dangers of climate change?"
-  // const prompt = "Generate a list of Languages that you recognize in a html select code"
 
   document.getElementById("generate_button").onclick = async () => {
     document.getElementById("generated_content").innerText = "Generating..."
@@ -166,15 +156,7 @@
 
   // Your web app's Firebase configuration
   // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-  const firebaseConfig = {
-    apiKey: "AIzaSyDhfoSLJgKhRnkf_DuWv6JkEocNw_tCkpU",
-    authDomain: "climatepoem.firebaseapp.com",
-    projectId: "climatepoem",
-    storageBucket: "climatepoem.appspot.com",
-    messagingSenderId: "994506076015",
-    appId: "1:994506076015:web:a7d0937540529a0f1e829a",
-    measurementId: "G-YE474GJ2P6"
-  };
+  const firebaseConfig = {};
 
   // Initialize Firebase
   const app = initializeApp(firebaseConfig);
